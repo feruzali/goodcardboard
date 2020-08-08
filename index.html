@@ -6,16 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Добрый Картон</title>
    	<link rel="shortcut icon" href="favicon.ico" type="image/png">
+   	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
-				<!-- Yandex.Metrika counter --> <script> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter47126406 = new Ya.Metrika({ id:47126406, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/47126406" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
-	<!-- Header -->
 	<header>
-		<!-- Menu -->
 		<nav class="navbar navbar-inverse">
 			<div class="container">
-				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-default navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false">
 					<span class="sr-only">Toggle navigation</span>
@@ -25,7 +23,7 @@
 					</button>
 					<div class="navbar-header-call">
 						<div class="navbar-header-call-img">
-							<img src="img/header/logo-mobile.svg" alt="Логотип">
+							<img src="img/header/logo-mobile.svg" alt="Logo">
 						</div>
 						<div class="navbar-header-call-phones">
 								<p>8 (347) <span>271-54-28</span></p>
@@ -38,24 +36,21 @@
 						</div>
 					</div>
 				</div>
-				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-navbar-collapse">
 					<ul class="nav navbar-nav">
 						<li><a class="slowly" href="#main">О компании</a></li>
 						<li><a class="slowly" href="#triggers">Преимущества</a></li>
-						<li><a class="slowly" href="#make">Производство</a></li>
-						<li><a class="slowly" href="#offer">Склад</a></li>
 						<li><a class="slowly" href="#production">Продукция</a></li>
+						<li><a class="slowly" href="#make">Производство</a></li>
+						<li><a class="slowly" href="#offer">Предложение</a></li>
 						<li><a class="slowly" href="#clients">Наши клиенты</a></li>
-						<li><a class="slowly" href="#feedback">Сертификаты</a></li>
-						<li><a class="slowly" href="#feedback">Отзывы</a></li>
+						<li><a class="slowly" href="#feedback">Отзывы о нас</a></li>
 						<li><a class="slowly" href="#contacts">Контакты</a></li>
 					</ul>
 				</div>
 			</div>
 		</nav>
 
-		<!-- The first contacts -->
 		<div class="header">
 			<div class="container">
 				<div class="row">
@@ -90,7 +85,6 @@
 		</div>
 	</header>
 
-	<!-- Main block -->
 	<main id="main" class="main">
 		<div class="main-overlay">
 			<div class="container">
@@ -112,7 +106,7 @@
 								<form class="bid" action="mailer/smart.php" method="POST">
 									<p>Получите индивидуальное предложение на производство и поставку гофропродукции<br><span>Образцы упаковки бесплатно!</span></p>
 									<input id="phone_1" name="user_phone" type="tel" required placeholder="Введите номер телефона">
-									<button class="button" onclick="yaCounter47126406.reachGoal('bid-btn'); return true;" type="submit">Оставить заявку!</button>
+									<button class="button" type="submit">Оставить заявку!</button>
 									<small>* Минимальный заказ 500 шт.</small>
 								</form>
 							</div>
@@ -123,12 +117,9 @@
 		</div>
 	</main>
 
-	<!-- Triggers block -->
 	<section id="triggers" class="triggers">
 		<div class="container">
 
-			<!-- Triggers-header -->
-			<div class="row">
 				<div class="col-sm-4">
 					<div class="triggers-text">
 						<h2>5 лет</h2>
@@ -149,7 +140,6 @@
 				</div>
 			</div>
 
-			<!-- Triggers-blocks -->
 			<div class="row">
 				<div class="col-sm-6 col-md-4">
 					<div class="triggers-box wow fadeInUp" data-wow-delay="0.1s" data-wow-offset="150">
@@ -234,7 +224,6 @@
 		</div>
 	</section>
 
-	<!-- Production block -->
 	<section id="production" class="production">
 		<div class="container">
 
@@ -295,7 +284,6 @@
 		</div>
 	</section>
 	
-	<!-- Offer block -->
 	<section id="offer" class="offer">
 		<div class="offer-overlay">
 			<div class="container">
@@ -306,7 +294,7 @@
 						</h2>
 						<p>Введите Ваш номер телефона:</p>
 						<input id="phone_2" name="user_phone" type="tel" required placeholder="+7 (XXX) XXX-XX-XX">
-						<button class="button" onclick="yaCounter47126406.reachGoal('bid-btn'); return true;" type="submit">Оставить заявку!</button>
+						<button class="button" type="submit">Оставить заявку!</button>
 						<small>* Минимальный заказ 500 шт.</small>
 					</form>
 				</div>
@@ -314,7 +302,6 @@
 		</div>
 	</section>
 
-	<!-- Make block -->
 	<section id="make" class="making">
 		<div class="h2-mobile">
 			<h2>Производство</h2>
@@ -384,7 +371,6 @@
 		</div>
 	</section>
 
-	<!-- Clients block -->
 	<section id="clients" class="clients">
 		<div class="container">
 
@@ -461,7 +447,6 @@
 		</div>
 	</section>
 
-	<!-- Feedback block -->
 	<section id="feedback" class="feedback">
 		<div class="container">
 
@@ -501,7 +486,6 @@
 		</div>	
 	</section>
 
-	<!-- Contacts block -->
 		<section id="contacts" class="contacts">
 			<div class="container-fluid">
 				<div class="row">
@@ -519,7 +503,7 @@
 								<h2>Тел. отдела продаж:</h2>
 								<p>8 (347) 271-54-28</p>
 								<p>8 (937) 363-30-00</p>
-								<button class="button btn-order" onclick="yaCounter47126406.reachGoal('callback-btn'); return true;">Заказать звонок</button>
+								<button class="button btn-order">Заказать звонок</button>
 							</div>
 							<div class="contacts-content-email">
 								<img src="img/contacts/03.svg" alt="">
@@ -530,20 +514,17 @@
 					</div>
 					<div class="col-xs-12">
 						<div class="contacts-map">
-							<script charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6f1c274a1643654f2b97b72c188607c9db064a5fd80e247a35958f13c56a34e0&amp;width=100%25&amp;height=550&amp;lang=ru_RU&amp;scroll=false"></script>
+							<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Adadd8f37207dc1e36af15c3827e4b6050701ef7bb864b347e61c110086fd18d9&amp;width=100%25&amp;height=550&amp;lang=ru_RU&amp;scroll=false"></script>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
-	<!-- Footer -->
 	<footer class="footer">
-		<p>© www.gofra-ural.ru 2016, все права защищены</p>
+		<p>© 2020, Made with ❤️ by <a href="https://github.com/feruzali">Feruz</a></p>
 	</footer>
 
-		<!-- Modal windows -->
-	<!-- The message is sent -->
 	<div class="popup-thanks">
 		<div class="popup-thanks-dialog">
 			<div class="popup-thanks-content">
@@ -557,7 +538,6 @@
 		</div>
 	</div>
 
-	<!-- Feedback form -->
 	<div class="popup-feedback">
 		<div class="popup-feedback-dialog">
 			<div class="popup-feedback-content">
@@ -570,14 +550,13 @@
 					<span>на производство и поставку изделий</span>
 					<p class="light">Введите ваш номер телефона:</p>
 					<input id="phone_3" name="user_phone" type="tel" required placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ">
-					<button class="button btn-sent" onclick="yaCounter47126406.reachGoal('bid-btn'); return true;" type="submit">Оставить заявку!</button>
+					<button class="button btn-sent" type="submit">Оставить заявку!</button>
 					<small>* Минимальный заказ 500 шт.</small>
 				</form>
 			</div>
 		</div>
 	</div>
 
-	<!-- More form -->
 	<div class="popup-more">
 		<div class="popup-more-dialog">
 			<div class="container">
@@ -610,9 +589,6 @@
 	</div>
 </div>
 
-
-
-			<!-- Popup-more Triggers-blocks -->
 
 							<div class="popup-more-content-triggers">
 								<div class="row">
@@ -704,29 +680,21 @@
 			</div>
 		</div>
 	</div>
-					<!-- Styles -->
- 
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-        <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Animate CSS -->
    	<link rel="stylesheet" href="css/animate.css">
    				<!-- Add Slick Slider CSS -->
 				<link rel="stylesheet" href="slick/slick.css">
 				<link rel="stylesheet" href="slick/slick-theme.css">
 
 
-				<!-- Scripts -->
+				
     <script src="js/jquery-1.12.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 
     <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/wow.min.js"></script>
-			<!-- Add libJS Slick Slider -->
-			<script src="slick/slick.min.js"></script>
+    <script src="slick/slick.min.js"></script>
 
-			<!-- Animate activate -->
+	
     <script>
     	new WOW().init();
     </script>
