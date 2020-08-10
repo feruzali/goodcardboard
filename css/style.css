@@ -95,6 +95,7 @@ header .navbar-inverse {
 }
 header .navbar-inverse .collapse {
   padding: 0;
+  overflow: hidden;
 }
 header .navbar-inverse .navbar-header {
   height: 4.4rem;
