@@ -15,7 +15,7 @@
 	<link rel="stylesheet" href="slick/slick-theme.css">
   </head>
 
-  <body>
+  <body id="body">
 	<header>
 		<nav class="navbar navbar-inverse">
 			<div class="container">
@@ -47,7 +47,6 @@
 						<li><a class="slowly" href="#triggers">Преимущества</a></li>
 						<li><a class="slowly" href="#production">Продукция</a></li>
 						<li><a class="slowly" href="#make">Производство</a></li>
-						<li><a class="slowly" href="#offer">Предложение</a></li>
 						<li><a class="slowly" href="#clients">Наши клиенты</a></li>
 						<li><a class="slowly" href="#feedback">Отзывы о нас</a></li>
 						<li><a class="slowly" href="#contacts">Контакты</a></li>
@@ -289,23 +288,7 @@
 		</div>
 	</section>
 	
-	<section id="offer" class="offer">
-		<div class="offer-overlay">
-			<div class="container">
-				<div class="offer-form">
-					<form class="bid" action="mailer/smart.php" method="POST">
-						<h2>Получите индивидуальное предложение<br>
-						<span>на производство и поставку изделий</span>
-						</h2>
-						<p>Введите Ваш номер телефона:</p>
-						<input id="phone_2" name="user_phone" type="tel" required placeholder="+7 (XXX) XXX-XX-XX">
-						<button class="button" type="submit">Оставить заявку!</button>
-						<small>* Минимальный заказ 500 шт.</small>
-					</form>
-				</div>
-			</div>
-		</div>
-	</section>
+	
 
 	<section id="make" class="making">
 		<div class="h2-mobile">
@@ -687,6 +670,13 @@
 		</div>
 	</div>
 
+	<a href="#body" id="anchor" class="slowly" >
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" viewBox="0 0 16 16">
+			<path fill="#ff9d00" d="M3 9.4l5-5 5 5-1.4 1.4-3.6-3.6-3.6 3.6z"></path>
+			<path fill="#ff9d00" d="M15 8c0 3.9-3.1 7-7 7s-7-3.1-7-7 3.1-7 7-7 7 3.1 7 7zM16 8c0-4.4-3.6-8-8-8s-8 3.6-8 8 3.6 8 8 8 8-3.6 8-8v0z"></path>
+		</svg>
+	</a>
+
    	
 				
     <script src="js/jquery-1.12.0.min.js"></script>
@@ -697,9 +687,24 @@
     <script src="slick/slick.min.js"></script>
 
 	
+	<script>
+		let anchor = document.getElementById('anchor');
+
+		function toggleAnchor() {
+			if(pageYOffset >= 400) {
+				anchor.style.right = '5rem';
+			} else {
+				anchor.style.right = '';
+			}
+		}
+
+		document.addEventListener('DOMContentLoaded', toggleAnchor);
+		window.addEventListener('scroll', toggleAnchor);
+	</script>
     <script>
     	new WOW().init();
     </script>
+
 
     <!-- Phone mask -->
     <script>
